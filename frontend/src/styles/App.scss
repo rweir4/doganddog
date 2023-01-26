@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200&family=Barlow:wght@300;400;500;600&family=IBM+Plex+Sans:wght@100&family=Sahitya&display=swap');
 
 #main {
-  background-color: var(--light-lavender);
+  background-color: var(--beige);
   min-height: 100vh;
   font-family: 'Barlow Semi Condensed';
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #navbar {
@@ -32,7 +32,7 @@
 
 .menu_links {
   vertical-align: middle;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--dark-indigo);
   margin: 1rem;
@@ -41,7 +41,7 @@
 .intro {
   position: relative;
   top: 9rem;
-  height: calc(100vh - 10rem);
+  height: calc(100vh - 9rem);
   width: 100%;
   overflow: hidden;
 
@@ -53,9 +53,35 @@
 }
 
 .content {
-  height: 100vh;
+  position: relative;
+  top: 9rem;
   max-width: 60%;
   margin: auto;
   align-items: center;
   text-align: center;
+
+  > div {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 25rem;
+  }
+
+  img {
+    object-fit: cover;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+.ambassadors {
+
+}
+
+.featured-looks {
+}
+
+.email-list {
+}
+
+.socials {
 }

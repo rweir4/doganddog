@@ -11,17 +11,22 @@ const tabs = {
 
 const NavBar = () => {
   return (
-    <div>
-      {Object.keys(tabs).map(title => {
-        return (<NavLink
-          key={title}
-          className='navbar-item'
-          to={tabs[title]}
-          exact='true'
-        >
-          {title}
-        </NavLink>);
-      })}
+    <div id='navbar'>
+      <img className='title'
+        src='/images/williwaw-logo.png' 
+        alt='title logo'/>
+      <div id='menu'>
+        {Object.keys(tabs).map(title => {
+          return (<NavLink
+            key={title}
+            className='menu_links'
+            to={tabs[title]}
+            exact='true'
+            >
+            {title}
+          </NavLink>);
+        })}
+      </div>
     </div>
   );
 };

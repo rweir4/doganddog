@@ -1,9 +1,12 @@
 import React from 'react';
+// import logo from '/ginnytoy.png';
 
 const Home = () => {
   return (
-    <div>
-      <img src='frontend/public/ginnytoy.png' alt='banner image'/>
+    <div className='intro'>
+      <img
+        src='/images/ginnytoy.png'
+        alt='logo' />
     </div>
   );
 };

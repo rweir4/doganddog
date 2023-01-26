@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200&family=Barlow:wght@300;400;500;600&family=IBM+Plex+Sans:wght@100&family=Sahitya&display=swap');
+
+#main {
+  background-color: var(--light-lavender);
+  min-height: 100vh;
+  font-family: 'Barlow Semi Condensed';
+  font-weight: 500;
+}
+
+#navbar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  background-color: inherit;
+}
+
+.title {
+  padding-top: 1rem;
+  width: 21.2rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+#menu {
+  width: 60%;
+  margin: auto;
+  color: var(--dark-indigo);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.menu_links {
+  vertical-align: middle;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--dark-indigo);
+  margin: 1rem;
+}
+
+.intro {
+  position: relative;
+  top: 9rem;
+  height: calc(100vh - 10rem);
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content {
+  height: 100vh;
+  max-width: 60%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}

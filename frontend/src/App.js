@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import NavBar from './components/NavBar';
 import Home from './components/pages/Home';
-import './App.css';
+import './styles/App.scss';
 
 const API_URL = 'http://localhost:3000/api/v1/users';
 
@@ -27,7 +27,7 @@ function App() {
   // }, []);
 
   return (
-    <div>
+    <div id='main'>
       <BrowserRouter>
         <NavBar/>
         <Routes>

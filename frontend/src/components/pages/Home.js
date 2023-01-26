@@ -2,7 +2,9 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div>HOME</div>
+    <div>
+      <img src='frontend/public/ginnytoy.png' alt='banner image'/>
+    </div>
   );
 };
 

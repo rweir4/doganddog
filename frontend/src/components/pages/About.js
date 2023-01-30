@@ -3,10 +3,17 @@ import React from "react";
 const About = () => {
   return (
     <div id='page-content'>
-      <h1>About Ginny & Co.</h1>
-      <img src="images/about-ginnyandme.png" />
+      <div>
+        <div className='font-giant break-before break-after'>About Ginny & Co.</div>
+        <div className='about'>
+          <img src="images/about-ginnyandme.png" />
+          <div className='font-large extra-spacing left-align-with-indent padding-left'>
+            At Ginny & Co., we believe that natural fibers are best for you, and your dog. There are many benefits to having them... listed below. what the heck do i talk about.
+          </div>
+        </div>
+      </div>
       <br />
-      <h1>Materials And Care</h1>
+      <h1 className='break-before'>About Our Materials</h1>
       <h2>
         100% Irish Linen:
       </h2>
@@ -22,11 +29,10 @@ const About = () => {
       <h2>
         Rayon Embroidery Thread:
       </h2>
-      <div className='font-large left-align-with-indent extra-spacing'>
+      <div className='font-large left-align-with-indent extra-spacing break-after'>
         A natural thread that comes from the tree fibers, made strong by cellulose.
       </div>
-      <br />
-      <h2>Care</h2>
+      <h1>Care</h1>
       <div className='font-large left-align-with-indent extra-spacing'>
         Machine wash on cold and hang dry to avoid shrinking. All fabrics have been pre-washed and should not shrink again unless subject to heat.
       </div>

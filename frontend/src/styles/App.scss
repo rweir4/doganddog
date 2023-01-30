@@ -107,9 +107,11 @@
 }
 
 .about {
+  display: flex;
+  
   img {
-    height: 30rem;
-    width: 20rem;
+    height: 50rem;
+    width: 30rem;
     object-fit: cover;
   }
 }
@@ -120,11 +122,27 @@
   font-size: larger;
 }
 
+.font-giant {
+  font-size: 2rem;
+}
+
 .left-align-with-indent {
   text-align: left;
-  text-indent: 3rem;
+  text-indent: 2rem;
 }
 
 .extra-spacing {
   line-height: 2.2rem;
+}
+
+.break-before {
+  padding-top: 30px;
+}
+
+.break-after {
+  padding-bottom: 30px;
+}
+
+.padding-left {
+  padding-left: 30px;
 }

@@ -1,5 +1,9 @@
 import React from 'react';
-// import logo from '/ginnytoy.png';
+import AccountPreview from '../socialMedia/accountPreview';
+
+const social_accounts = {
+  'Ginny': { 'url': 'https://www.instagram.com/p/CnXt3oxv6su/embed', type: 'owner' }
+};
 
 const Home = () => {
   return (
@@ -9,22 +13,23 @@ const Home = () => {
           src='/images/ginnytoy.png'
           alt='logo' />
       </div>
-      <div className='content'>
-        <div className='ambassadors'>
+      <div id='page-content' className='content'>
+        <div>
           <h1>Meet Our Ambassadors</h1>
         </div>
-        <div className='featured-looks'>
+        <div>
           <h1>Featured Looks</h1>
             <div>
               <img src='/images/GinnyInMock.png' alt='mock up' />
               <h3>Classic Linen Tunic</h3>
             </div>
         </div>
-        <div className='email-list'>
+        <div>
           <h1>Sign up for our Newsletter</h1>
         </div>
-        <div className='socials'>
+        <div>
           <h1>We're on Instagram!</h1>
+          <AccountPreview userURL={social_accounts['Ginny']['url']}/>
         </div>
       </div>
     </div>

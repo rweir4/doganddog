@@ -2,7 +2,8 @@ import React from 'react';
 import AccountPreview from '../socialMedia/accountPreview';
 
 const social_accounts = {
-  'Ginny': { 'url': 'https://www.instagram.com/p/CnXt3oxv6su/embed', type: 'owner' }
+  'Ginny&Co': { 'url': 'https://www.instagram.com/p/CnXt3oxv6su/embed', type: 'owner' },
+  'RebeccaAndGinny': { 'url': 'https://www.instagram.com/p/CnDOpTmvd7b/embed', type: 'owner' }
 };
 
 const Home = () => {
@@ -29,7 +30,10 @@ const Home = () => {
         </div>
         <div>
           <h1>We're on Instagram!</h1>
-          <AccountPreview userURL={social_accounts['Ginny']['url']}/>
+          <div>
+            <AccountPreview userURL={social_accounts['Ginny&Co']['url']}/>
+            <AccountPreview userURL={social_accounts['RebeccaAndGinny']['url']}/>
+          </div>
         </div>
       </div>
     </div>

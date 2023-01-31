@@ -7,6 +7,8 @@
   font-weight: 600;
 }
 
+/* navbar */
+
 #navbar {
   position: fixed;
   z-index: 2;
@@ -37,6 +39,24 @@
   color: var(--dark-indigo);
   margin: 1rem;
 }
+
+
+/* footer */
+
+#footer {
+  position: relative;
+  top: 20rem;
+  width: 100%;
+  height: 20rem;
+  background-color: var(--indigo);
+  color: var(--beige);
+}
+
+.white-icon {
+  color: var(--beige);
+}
+
+/* pages */
 
 .intro {
   position: relative;
@@ -109,14 +129,25 @@
 .about {
   display: flex;
   
-  img {
+  > img {
     height: 45rem;
     width: 28rem;
     object-fit: cover;
   }
 }
 
+.materials-img {
+  width: 10rem;
+  height: 10rem;
+  margin: 20px;
+}
+
 /* style based classes */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
 
 .font-large {
   font-size: larger;

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_31_212916) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_31_213616) do
   create_table "colors", force: :cascade do |t|
     t.string "color", null: false
     t.datetime "created_at", null: false
@@ -41,6 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_31_212916) do
     t.datetime "updated_at", null: false
     t.integer "color_id"
     t.text "sizes", default: "--- []\n"
+    t.string "product_photo_location"
     t.index ["name"], name: "index_products_on_name"
   end
 

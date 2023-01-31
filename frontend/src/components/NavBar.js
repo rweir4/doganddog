@@ -12,9 +12,11 @@ const tabs = {
 const NavBar = () => {
   return (
     <div id='navbar'>
-      <img className='title'
-        src='/images/williwaw-logo.png' 
-        alt='title logo'/>
+      <a href='/'>
+        <img className='title'
+          src='/images/williwaw-logo.png' 
+          alt='title logo'/>
+      </a>  
       <div id='menu'>
         {Object.keys(tabs).map(title => {
           return (<NavLink

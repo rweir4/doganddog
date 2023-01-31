@@ -1,7 +1,7 @@
 // import axios from 'axios';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import NavBar from './components/NavBar';
+import Header from './components/Header';
 import Footer from "./components/Footer";
 import Home from './components/pages/Home';
 import Shop from './components/pages/Shop';
@@ -32,7 +32,7 @@ function App() {
   return (
     <div id='main'>
       <BrowserRouter>
-        <NavBar/>
+        <Header/>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

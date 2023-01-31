@@ -24,7 +24,7 @@ const About = () => {
               and hidden away so that none of the fibers can fray with wear and tear.
             </div>
             <div>
-              From the english garden, to the pyramids, to the beach, or simply the park, your pup should be ready 
+              From the english garden, to the pyramids, the beach, or simply the park, your pup should be ready 
               for any adventure, and we aim to make sure of just that.
             </div>
             <div>
@@ -67,7 +67,7 @@ const About = () => {
             Rayon Embroidery Thread:
           </h2>
           <div className='font-large left-align-with-indent extra-spacing break-after'>
-            A natural thread that comes from the tree fibers, made strong by cellulose.
+            A natural thread that comes from tree fibers, made strong by cellulose.
             We use this to give extra shine to our embroidery designs, which also 
             require a stronger thread than cotton or silk.
           </div>

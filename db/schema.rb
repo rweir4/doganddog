@@ -10,16 +10,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_31_030152) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_31_212916) do
+  create_table "colors", force: :cascade do |t|
+    t.string "color", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "inventories", force: :cascade do |t|
+    t.integer "product_id", null: false
+    t.integer "color_id", null: false
+    t.integer "size_id", null: false
+    t.integer "quantity", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "product_types", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "category"
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name", null: false
     t.text "description", null: false
     t.float "price", null: false
-    t.text "color_ids", default: "--- []\n"
     t.integer "product_type_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "color_id"
+    t.text "sizes", default: "--- []\n"
     t.index ["name"], name: "index_products_on_name"
+  end
+
+  create_table "sizes", force: :cascade do |t|
+    t.string "size", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "product_types", default: "--- []\n"
   end
 
   create_table "users", force: :cascade do |t|

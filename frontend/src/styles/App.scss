@@ -87,29 +87,29 @@
     border: none;
     border-radius: 4px;
     line-height: 1.5rem;
-  }
-
-  button {
-    transform: translate(0, 3px);
-    font-family: 'Barlow Semi Condensed';
-    font-weight: 600;
     font-size: 1.2rem;
-    line-height: 1.5rem;
-    background-color: var(--beige);
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &:active {
-      background-color: var(--periwinkle);
-    }
   }
 }
 
+.submit-btn {
+  transform: translate(0, 1px);
+  font-family: 'Barlow Semi Condensed';
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  background-color: var(--beige);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: var(--periwinkle);
+  }
+}
 
 .thanks {
   margin-top: 10px;
@@ -230,26 +230,57 @@
   }
 }
 
+.materials {
+  background-color: var(--periwinkle);
+  padding: 5rem;
+}
+
 .materials-img {
   width: 10rem;
   height: 10rem;
   margin: 20px;
 }
 
-.contact-me {
+.contact-us {
   label {
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    margin-bottom: 10px;
+    border-radius: 4px;
   }
 
-  input: {
-    line-height: 1.5rem;
+  input {
+    margin-top: 10px;
+    min-width: 18rem;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px;
   }
 
   textarea {
-    width: 40rem;
-    height: 10rem;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 10px;
+    min-width: 30rem;
+    min-height: 10rem;
+    resize: both;
+  }
+
+  button {
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+}
+
+#contact-btn {
+  background-color: var(--beige-dark);
+  
+    &:active {
+    background-color: var(--periwinkle-dark);
   }
 }
 

@@ -25,13 +25,11 @@ const ShippingAndReturns = () => {
         shipping_count += 1;
         return (<li key={shipping_count}>{policy}</li>);
       })}
-      <div>
-        <h1>Return Policy</h1>
-        {ReturnPolicy.map(policy => {
-          return_count += 1;
-          return (<li key={return_count}>{policy}</li>);
-        })}
-      </div>
+      <h1 className='space-before'>Return Policy</h1>
+      {ReturnPolicy.map(policy => {
+        return_count += 1;
+        return (<li key={return_count}>{policy}</li>);
+      })}
       <div className='space-before'>
         **Exceptions:
         We cannot be responsible for lost or stolen packages for orders less than $25.

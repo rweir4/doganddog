@@ -28,7 +28,7 @@ const NewsletterSignUp = () => {
       <label>SIGN UP FOR OUR NEWSLETTER</label>
       <div>
         <input type='text' placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
-        <button onClick={e => handleSubmit(e)}>Sign Up</button>
+        <button className='submit-btn' onClick={e => handleSubmit(e)}>Sign Up</button>
       </div>
       {saved && <div className='thanks'>
           <img src='' alt='paw-wave' />Thanks for subscribing!

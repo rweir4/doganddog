@@ -2,19 +2,20 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <form className='font-larger space-before contact-me'>Contact Me
+    <form className='font-giant space-before contact-us'>Contact Us
       <div className='space-before'>
-        <label>Name
-          <input placeholder='Name' />
-        </label>
-        <label>Email
-          <input placeholder='Email' />
-        </label>
+        <label className='space-before'>Name</label>
+        <input placeholder='Name' />
       </div>
-      <label>Message
-        <textarea placeholder='Message' />
-      </label>
-      <button>Send Email</button>
+      <div>
+        <label className='space-before'>Email</label>
+        <input placeholder='Email' />
+      </div>
+      <div>
+        <label className='space-before flex'>Message</label>
+        <textarea placeholder='Message' className='message'/>
+      </div>
+      <button id='contact-btn' className='submit-btn'>Send Email</button>
     </form>
   );
 };

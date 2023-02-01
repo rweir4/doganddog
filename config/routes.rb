@@ -4,6 +4,8 @@ Rails.application.routes.draw do
       resources :users
       resources :products
       resources :subscriptions
+
+      post '/mailers', to: 'mailers#send'
     end
   end
   

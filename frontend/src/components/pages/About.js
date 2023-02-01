@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div id='page-content'>
       <div>
-        <div className='font-giant break-before break-after'>About Ginny & Co.</div>
+        <div className='font-giant space-before space-after'>About Ginny & Co.</div>
         <div className='about'>
           <img src="images/about-ginnyandme.png" alt='Rebecca and Ginny'/>
           <div className='font-large extra-spacing left-align-with-indent padding-left'>
@@ -17,7 +17,7 @@ const About = () => {
             <div>
               Ginny is my family, and my family deserves the best: all natural, sausage dog adapted designs.
             </div>
-            <div className='break-before'>
+            <div className='space-before'>
               At Ginny & Co., we believe that natural fibers are best for dogs, just as they are for their humans.
               Our spring line is made from Irish Linen fabrics that have a tight weave and smooth finish.
               We believe in dotting all our i's and crossing all our t's, so all seams are finished with silk thread 
@@ -35,8 +35,8 @@ const About = () => {
         </div>
       </div>
       <br />
-      <h1 className='break-before'>About Our Materials</h1>
-      <div className='flex break-before break-after'>
+      <h1 className='space-before'>About Our Materials</h1>
+      <div className='flex space-before space-after'>
         <div>
           <h2>
             100% Irish Linen:
@@ -49,7 +49,7 @@ const About = () => {
         </div>
         <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
       </div>
-      <div className='flex break-after'>
+      <div className='flex space-after'>
         <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
         <div>
           <h2>
@@ -61,12 +61,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='flex break-after'>
+      <div className='flex space-after'>
         <div>
           <h2>
             Rayon Embroidery Thread:
           </h2>
-          <div className='font-large left-align-with-indent extra-spacing break-after'>
+          <div className='font-large left-align-with-indent extra-spacing space-after'>
             A natural thread that comes from tree fibers, made strong by cellulose.
             We use this to give extra shine to our embroidery designs, which also 
             require a stronger thread than cotton or silk.
@@ -75,7 +75,7 @@ const About = () => {
         <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
       </div>
       <h1>Care</h1>
-      <div className='font-large left-align-with-indent extra-spacing break-after'>
+      <div className='font-large left-align-with-indent extra-spacing space-after'>
         Machine wash on cold and hang dry to avoid shrinking. All fabrics have been pre-washed and should not shrink again unless subject to heat.
       </div>
       <i class="fa-brands fa-instagram"></i>

@@ -7,10 +7,12 @@ const Footer = () => {
   return (
     <div id='footer'>
       <NewsletterSignUp />
-      <div>hello.ginnyandco@gmail.com</div>
-      <a href='https://www.instagram.com/ginnyand.co/' alt='instagram' target='_blank'>
-        <FontAwesomeIcon icon={faInstagram} />
-      </a>
+      <div className='footer-right'>
+        <a href='https://www.instagram.com/ginnyand.co/' alt='instagram' target='_blank'>
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <div className='font-larger'>hello.ginnyandco@gmail.com</div>
+      </div>
     </div>
   );
 };

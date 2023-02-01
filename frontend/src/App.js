@@ -8,7 +8,7 @@ import Shop from './components/pages/Shop';
 import About from './components/pages/About';
 import './styles/App.scss';
 
-const API_URL = 'http://localhost:3000/api/v1/users';
+// const API_URL = 'http://localhost:3000/api/v1/users';
 
 // const getUsers = () => {
 //   return axios.get(API_URL).then(response => response.data);
@@ -25,7 +25,7 @@ function App() {
   //       setUsers(data);
   //     }
   //   });
-  // 
+  
   //   return () => (mounted = false);
   // }, []);
 

@@ -6,9 +6,9 @@ const About = () => {
     <div id='page-content'>
       <div>
         <div className='font-giant space-before space-after'>About Ginny & Co.</div>
-        <div className='about'>
+        <div className='about font-medium'>
           <img src="images/about-ginnyandme.png" alt='Rebecca and Ginny'/>
-          <div className='font-large extra-spacing left-align-with-indent padding-left'>
+          <div className='extra-spacing left-align-with-indent padding-left'>
             <div>
               My name is Rebecca, and I live in East Tennessee with my long-haired miniature dachshund Ginny,
               aka Ginevra Anastasia. She's named after two strong women: Ginny Weasley, and Disney's Anastasia,
@@ -19,9 +19,9 @@ const About = () => {
             </div>
             <div className='space-before'>
               At Ginny & Co., we believe that natural fibers are best for dogs, just as they are for their humans.
-              Our spring line is made from Irish Linen fabrics that have a tight weave and smooth finish.
-              We believe in dotting all our i's and crossing all our t's, so all seams are finished with silk thread 
-              and hidden away so that none of the fibers can fray with wear and tear.
+              Our spring line is made from Irish Linen fabrics that have a tight weave and smooth finish. We believe 
+              in dotting all our i's and crossing all our t's, so we ensure that the finish leaves no spare ends for your
+              dog to tear at to keep our products beautiful and safe.
             </div>
             <div>
               From the english garden, to the pyramids, the beach, or simply the park, your pup should be ready 
@@ -41,7 +41,7 @@ const About = () => {
           <h2>
             100% Irish Linen:
           </h2>
-          <div className='font-large left-align-with-indent extra-spacing'>
+          <div className='font-medium left-align-with-indent extra-spacing'>
             All of our products are made from Irish Linen, which is moisture-wicking, thermoregulating, 
             and antibacterial, to can keep your dog healthier, cleaner, and smelling better for longer. 
             It also lets go of stains and gets more durable when wet, making it perfect for summer fun!
@@ -55,7 +55,7 @@ const About = () => {
           <h2>
             Kapok Fill:
           </h2>
-          <div className='font-large left-align-with-indent extra-spacing'>
+          <div className='font-medium left-align-with-indent extra-spacing'>
             Our plush toys are filled with kapok fibers, which are organic and hypoallergenic, 
             gathered from the seed pods of the kapok tree.
           </div>
@@ -66,7 +66,7 @@ const About = () => {
           <h2>
             Rayon Embroidery Thread:
           </h2>
-          <div className='font-large left-align-with-indent extra-spacing space-after'>
+          <div className='font-medium left-align-with-indent extra-spacing space-after'>
             A natural thread that comes from tree fibers, made strong by cellulose.
             We use this to give extra shine to our embroidery designs, which also 
             require a stronger thread than cotton or silk.
@@ -75,11 +75,9 @@ const About = () => {
         <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
       </div>
       <h1>Care</h1>
-      <div className='font-large left-align-with-indent extra-spacing space-after'>
+      <div className='font-medium left-align-with-indent extra-spacing space-after'>
         Machine wash on cold and hang dry to avoid shrinking. All fabrics have been pre-washed and should not shrink again unless subject to heat.
       </div>
-      <i class="fa-brands fa-instagram"></i>
-
       <ContactForm />
     </div>
   );

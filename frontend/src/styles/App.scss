@@ -205,6 +205,17 @@
   }
 }
 
+/* shipping and returns */
+
+.shipping-returns {
+  li {
+    text-align: left;
+    line-height: 2.5rem;
+  }
+}
+
+/* about */
+
 .about {
   display: flex;
   
@@ -219,6 +230,23 @@
   width: 10rem;
   height: 10rem;
   margin: 20px;
+}
+
+.contact-me {
+  label {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+  }
+
+  input: {
+    line-height: 1.5rem;
+  }
+
+  textarea {
+    width: 40rem;
+    height: 10rem;
+  }
 }
 
 /* social media */
@@ -238,8 +266,12 @@
   align-items: center;
 }
 
-.font-large {
+.font-medium {
   font-size: larger;
+}
+
+.font-large {
+  font-size: 1.2rem;
 }
 
 .font-larger {

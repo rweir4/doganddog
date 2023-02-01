@@ -1,5 +1,6 @@
 import React from 'react';
 import AccountPreview from '../socialMedia/accountPreview';
+import NewsletterSignUp from '../NewsletterSignUp';
 
 const social_accounts = {
   'Ginny&Co': { 'url': 'https://www.instagram.com/p/CnXt3oxv6su/embed', type: 'owner' },
@@ -16,9 +17,6 @@ const Home = () => {
       </div>
       <div id='page-content' className='content'>
         <div>
-          <h1>Meet Our Ambassadors</h1>
-        </div>
-        <div>
           <h1>Featured Looks</h1>
             <div>
               <img src='/images/GinnyInMock.png' alt='mock up' />
@@ -26,7 +24,14 @@ const Home = () => {
             </div>
         </div>
         <div>
-          <h1>Sign up for our Newsletter</h1>
+          <h1>Meet Our Ambassadors</h1>
+        </div>
+        <div id='home-subscribe' className='flex-center-horizontal'>
+          <NewsletterSignUp />
+          <div className='subscribe-desc extra-spacing'>
+            Be in the know before collections are released by 
+            signing up for our newsletter, which will be sent out once a month.
+          </div>
         </div>
         <div>
           <h1>We're on Instagram!</h1>

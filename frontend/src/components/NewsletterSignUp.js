@@ -7,17 +7,20 @@ const POST_SUBSCRIPTION_URL = 'http://localhost:3000/api/v1/subscriptions';
 const saveNewSubscription = (email) => {
   return axios.post(POST_SUBSCRIPTION_URL, {
     email: email
-  }).then(response => {
-    return response.data;
   });
 }
 
 const NewsletterSignUp = () => {
   let [email, setEmail] = useState('');
+  let [saved, setSaved] = useState(false);
 
   const handleSubmit = (e) => {
-    saveNewSubscription(email);
+    saveNewSubscription(email).then(() => {
+      setSaved(true);
+    });
     e.preventDefault();
+
+    setEmail('');
   }
 
   return (
@@ -25,8 +28,11 @@ const NewsletterSignUp = () => {
       <label>SIGN UP FOR OUR NEWSLETTER</label>
       <div>
         <input type='text' placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
-        <button onClick={e => handleSubmit(e)}>Submit</button>
+        <button onClick={e => handleSubmit(e)}>Sign Up</button>
       </div>
+      {saved && <div className='thanks'>
+          <img src='' alt='paw-wave' />Thanks for subscribing!
+        </div>}
     </form>
   );
 };

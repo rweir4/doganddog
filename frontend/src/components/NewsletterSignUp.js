@@ -30,7 +30,7 @@ const NewsletterSignUp = () => {
         <input type='text' placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
         <button className='submit-btn' onClick={e => handleSubmit(e)}>Sign Up</button>
       </div>
-      {saved && <div className='thanks'>
+      {saved && <div className='complete'>
           <img src='' alt='paw-wave' />Thanks for subscribing!
         </div>}
     </form>

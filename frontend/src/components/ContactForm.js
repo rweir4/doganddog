@@ -16,10 +16,16 @@ const ContactForm = () => {
   let [name, setName] = useState('');
   let [email, setEmail] = useState('');
   let [message, setMessage] = useState('');
+  let [emailSent, setEmailSent]  = useState(false);
 
   const handleSubmit = (e) => {
-    sendMessage(name, email, message);
-
+    sendMessage(name, email, message).then(() => {
+      setEmailSent(true);
+      setName('');
+      setEmail('')
+      setMessage('');
+    });
+    
     e.preventDefault();
   }
 
@@ -27,15 +33,15 @@ const ContactForm = () => {
     <form className='font-giant space-before contact-us'>Contact Us
       <div className='space-before'>
         <label className='space-before'>Name</label>
-        <input placeholder='Name' onChange={(e) => {setName(e.target.value)}}/>
+        <input placeholder='Name' value={name} onChange={(e) => {setName(e.target.value)}}/>
       </div>
       <div>
         <label className='space-before'>Email</label>
-        <input placeholder='Email' onChange={(e) => {setEmail(e.target.value)}}/>
+        <input placeholder='Email' value={email} onChange={(e) => {setEmail(e.target.value)}}/>
       </div>
       <div>
         <label className='space-before flex'>Message</label>
-        <textarea placeholder='Message' className='message' onChange={(e) => {setMessage(e.target.value)}}/>
+        <textarea placeholder='Message' value={message} className='message' onChange={(e) => {setMessage(e.target.value)}}/>
       </div>
       <button 
         id='contact-btn' 
@@ -43,6 +49,9 @@ const ContactForm = () => {
         onClick={(e) => {handleSubmit(e)}}>
           Send Email
       </button>
+      {emailSent && <div className='complete'>
+          <img src='' alt='paw-wave' />Email Sent!
+        </div>}
     </form>
   );
 };

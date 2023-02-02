@@ -43,13 +43,13 @@ Rails.application.configure do
   :address => 'smtp.gmail.com',
   :port => 587,
   :user_name => 'hello.ginnyandco@gmail.com',
-  :password => 'ipbybciuqdguahcl',
+  :password => 'vlrrmnfufuqfrjga',
   :authentication => 'plain',
   :enable_starttls_auto => true
   }
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 

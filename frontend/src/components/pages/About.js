@@ -3,10 +3,10 @@ import ContactForm from "../ContactForm";
 
 const About = () => {
   return (
-    <div id='page-content'>
+    <div id='page-content' className='about-page'>
       <div>
-        <div className='font-giant space-before space-after'>About Ginny & Co.</div>
-        <div className='about font-medium'>
+        <h1 className='space-before space-after'>About Ginny & Co.</h1>
+        <div className='about font-medium space-after'>
           <img src="images/about-ginnyandme.png" alt='Rebecca and Ginny'/>
           <div className='extra-spacing left-align-with-indent padding-left'>
             <div>
@@ -36,7 +36,7 @@ const About = () => {
       </div>
       <br />
       <div className='materials'>
-        <h1 className='space-before'>About Our Materials</h1>
+        <h1>About Our Materials</h1>
         <div className='flex space-before space-after'>
           <div>
             <h2>

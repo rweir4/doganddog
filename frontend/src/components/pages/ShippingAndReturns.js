@@ -19,7 +19,7 @@ const ShippingAndReturns = () => {
   let return_count = 0
   
   return (
-    <div id='page-content' className='shipping-returns font-large'>
+    <div id='page-content' className='shipping-returns font-larger'>
       <h1>Shipping Policy</h1>
       {ShippingPolicy.map(policy => {
         shipping_count += 1;

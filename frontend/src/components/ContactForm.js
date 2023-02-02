@@ -31,7 +31,7 @@ const ContactForm = () => {
 
   return (
     <form className='font-giant space-before contact-us'>Contact Us
-      <div className='space-before'>
+      <div>
         <label className='space-before'>Name</label>
         <input placeholder='Name' value={name} onChange={(e) => {setName(e.target.value)}}/>
       </div>

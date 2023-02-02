@@ -23,7 +23,7 @@ const Home = () => {
               <h3>Classic Linen Tunic</h3>
             </div>
         </div>
-        <div>
+        <div className='ambassadors'>
           <h1>Meet Our Ambassadors</h1>
           <div>
             We're launching an ambassador program! As an ambassador, you will 

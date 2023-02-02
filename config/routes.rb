@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       resources :products
       resources :subscriptions
 
-      post '/mailers', to: 'mailers#send'
+      post '/mailers', to: 'mailers#customer_inquiry'
     end
   end
   

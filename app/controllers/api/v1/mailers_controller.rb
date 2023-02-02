@@ -1,9 +1,8 @@
 class Api::V1::MailersController < ApplicationController
-  def send
-    debugger
+  def customer_inquiry
     @mailer = mailer_params
 
-    GeneralMailer.with(user: @mailer).customer_inquiry.deliver_now
+    CustomerInquiryMailer.with(mailer: @mailer).customer_inquiry.deliver_now
   end
 
   private

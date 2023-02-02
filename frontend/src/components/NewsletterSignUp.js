@@ -10,9 +10,11 @@ const saveNewSubscription = (email) => {
   });
 }
 
-const NewsletterSignUp = () => {
+const NewsletterSignUp = ( {footer} ) => {
   let [email, setEmail] = useState('');
   let [saved, setSaved] = useState(false);
+  console.log('footer')
+  console.log(footer)
 
   const handleSubmit = (e) => {
     saveNewSubscription(email).then(() => {
@@ -23,6 +25,8 @@ const NewsletterSignUp = () => {
     setEmail('');
   }
 
+  const pawFile = footer ? 'images/paw-light.png' : 'images/paw.png';
+
   return (
     <form className='newsletter' onSubmit={e => handleSubmit(e)}>
       <label>SIGN UP FOR OUR NEWSLETTER</label>
@@ -31,7 +35,7 @@ const NewsletterSignUp = () => {
         <button className='submit-btn' onClick={e => handleSubmit(e)}>Sign Up</button>
       </div>
       {saved && <div className='complete'>
-          <img src='' alt='paw-wave' />Thanks for subscribing!
+          <img className='paw' src={pawFile} alt='paw-wave' />Thanks for subscribing!<img src={pawFile} alt='paw-wave' />
         </div>}
     </form>
   );

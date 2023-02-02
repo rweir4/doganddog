@@ -13,7 +13,7 @@ const Home = () => {
       <div className='intro'>
         <img
           src='/images/ginnytoy.png'
-          alt='logo' />
+          alt='banner image' />
       </div>
       <div id='page-content' className='content'>
         <div>
@@ -36,7 +36,7 @@ const Home = () => {
           </div>
         </div>
         <div id='home-subscribe' className='flex-center-horizontal'>
-          <NewsletterSignUp />
+          <NewsletterSignUp footer={false}/>
           <div className='subscribe-desc extra-spacing'>
             Be in the know before collections are released by 
             signing up for our newsletter, which will be sent out once a month.

@@ -6,7 +6,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
   return (
     <div id='footer'>
-      <NewsletterSignUp />
+      <NewsletterSignUp footer={true}/>
       <div className='footer-right'>
         <a href='https://www.instagram.com/ginnyand.co/' alt='instagram' target='_blank'>
           <FontAwesomeIcon icon={faInstagram} />

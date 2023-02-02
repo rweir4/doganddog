@@ -1,6 +1,4 @@
-// import axios from 'axios';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from "./components/Footer";
 import Home from './components/pages/Home';
@@ -10,26 +8,7 @@ import ShippingAndReturns from "./components/pages/ShippingAndReturns";
 import About from './components/pages/About';
 import './styles/App.scss';
 
-// const API_URL = 'http://localhost:3000/api/v1/users';
-
-// const getUsers = () => {
-//   return axios.get(API_URL).then(response => response.data);
-// }
-
 function App() {
-  // const [users, setUsers] = useState([]);
-
-  // useEffect(() => {
-  //   let mounted = true;
-
-  //   getUsers().then((data) => {
-  //     if (mounted) {
-  //       setUsers(data);
-  //     }
-  //   });
-  
-  //   return () => (mounted = false);
-  // }, []);
 
   return (
     <div id='main'>

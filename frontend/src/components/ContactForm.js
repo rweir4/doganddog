@@ -50,7 +50,7 @@ const ContactForm = () => {
           Send Email
       </button>
       {emailSent && <div className='complete'>
-          <img src='' alt='paw-wave' />Email Sent!
+          <img src='images/paw.png' alt='paw-wave' />Your message was sent!<img src='images/paw.png' alt='paw-wave' />
         </div>}
     </form>
   );

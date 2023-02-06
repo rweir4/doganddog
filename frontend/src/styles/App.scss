@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200&family=Barlow:wght@300;400;500;600&family=IBM+Plex+Sans:wght@100&family=Sahitya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,300;0,500;0,600;0,700;1,400&family=Barlow:wght@300;400;500;600&family=IBM+Plex+Sans:wght@100&family=Sahitya&display=swap');
 
 #main {
   background-color: var(--beige);
   min-height: 100vh;
   font-family: 'Barlow Semi Condensed';
-  font-weight: 600;
+  font-weight: 300;
   text-decoration: none;
 }
 
@@ -39,7 +39,8 @@
 
 .menu-links {
   vertical-align: middle;
-  font-size: 1.2rem;
+  font-weight: 300;
+  font-size: 1.4rem;
   text-decoration: none;
   color: var(--dark-indigo);
   margin: 1rem;
@@ -112,7 +113,7 @@
   }
 
   &:active {
-    background-color: var(--periwinkle);
+    background-color: var(--light-lavender);
   }
 }
 
@@ -157,7 +158,7 @@
   margin: auto;
   align-items: center;
   text-align: center;
-
+  
   > div {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -182,11 +183,11 @@
 
 #home-subscribe {
   height: 15rem;
-  background-color: var(--periwinkle);
+  background-color: var(--light-lavender);
 
 
   button:active {
-    background-color: var(--periwinkle-dark);
+    background-color: var(--lavender);
   }
 
   img {
@@ -224,7 +225,7 @@
 /* ambassadors */
 
 .ambassadors {
-  width: 40%;
+  width: 40rem;
 
   a {
     text-decoration: none;
@@ -266,7 +267,7 @@
 }
 
 .materials {
-  background-color: var(--periwinkle);
+  background-color: var(--light-lavender);
   padding: 3rem 5rem;
 }
 
@@ -317,7 +318,7 @@
   background-color: var(--beige-dark);
   
     &:active {
-    background-color: var(--periwinkle-dark);
+    background-color: var(--lavender);
   }
 }
 
@@ -352,6 +353,7 @@
 
 .font-giant {
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .left-align-with-indent {
@@ -389,4 +391,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.center {
+  margin: auto;
 }

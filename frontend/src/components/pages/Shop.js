@@ -10,7 +10,7 @@ const Shop = () => {
         counter += 1;
         return(
             <div key={counter}>
-              <h2>Product {counter}</h2>
+              <div className='font-larger'>Product {counter}</div>
               <img src='/images/GinnyInMock.png' alt='mock up' />
             </div>
           );

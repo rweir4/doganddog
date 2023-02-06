@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div id='page-content' className='about-page'>
       <div>
-        <h1 className='space-before space-after'>About Ginny & Co.</h1>
+        <div className='font-giant space-before space-after'>About Ginny & Co.</div>
         <div className='about font-medium space-after'>
           <img src="images/about-ginnyandme.png" alt='Rebecca and Ginny'/>
           <div className='extra-spacing left-align-with-indent padding-left'>
@@ -36,7 +36,7 @@ const About = () => {
       </div>
       <br />
       <div className='materials'>
-        <h1>About Our Materials</h1>
+        <div>About Our Materials</div>
         <div className='flex space-before space-after'>
           <div>
             <h2>
@@ -75,7 +75,7 @@ const About = () => {
           </div>
           <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
         </div>
-        <h1>Care</h1>
+        <div>Care</div>
         <div className='font-medium left-align-with-indent extra-spacing space-after'>
           Machine wash on cold and hang dry to avoid shrinking. All fabrics have been pre-washed and should not shrink again unless subject to heat.
         </div>

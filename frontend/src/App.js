@@ -11,17 +11,19 @@ import './styles/App.scss';
 function App() {
 
   return (
-    <div id='main'>
+    <div id='app'>
       <BrowserRouter>
         <Header/>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/ambassadors" element={<MeetOurAmbassadors />} />
-          <Route path="/shippingandreturns" element={<ShippingAndReturns />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/ambassadors" element={<MeetOurAmbassadors />} />
+            <Route path="/shippingandreturns" element={<ShippingAndReturns />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
         <Footer />
       </BrowserRouter>
     </div>

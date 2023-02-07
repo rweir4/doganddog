@@ -6,10 +6,24 @@ import ProductPreview from "../ProductPreview";
 const GET_PRODUCTS_URL = 'http://localhost:3000/api/v1/products';
 const SHIRT_PRODUCT_ID = 1;
 
+const ProductListing = ({ shirts }) => (
+  <div>
+    {shirts.map(product => {
+      return(<ProductPreview key={product.id} product={product} />);
+    })}
+  </div>
+);
+
+const BetaPage = () => (
+  <div className='font-giant'>
+    Our Spring Release, English Garden, is coming March 1, 2023!
+  </div>
+);
+
 const Shop = () => {
   let [products, setProducts] = useState([]);
   let [shirts, setShirts] = useState([]);
-  // let [product_type, setProduc] = useState(SHIRT_PRODUCT_ID);
+  // let [product_type, setProduc] = useState(SHIRT_PRODUCT_ID)
 
   useEffect(() => {
     axios.get(GET_PRODUCTS_URL).then((response) => {
@@ -27,11 +41,11 @@ const Shop = () => {
     return shirts;
   };
 
+  const isReleased = false;
+
   return (
     <div id='page-content' className='shop'>
-      {shirts.map(product => {
-        return(<ProductPreview key={product.id} product={product} />);
-      })}
+      {isReleased ? <ProductListing shirts={[]}/> : <BetaPage />}
     </div>
   );
 };

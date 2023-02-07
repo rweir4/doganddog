@@ -6,6 +6,7 @@ import Shop from './components/pages/Shop';
 import MeetOurAmbassadors from "./components/pages/MeetOurAmbassadors";
 import ShippingAndReturns from "./components/pages/ShippingAndReturns";
 import About from './components/pages/About';
+import ScrollToTop from './components/scrollToTop';
 import './styles/App.scss';
 
 function App() {

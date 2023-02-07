@@ -13,8 +13,6 @@ const saveNewSubscription = (email) => {
 const NewsletterSignUp = ( {footer} ) => {
   let [email, setEmail] = useState('');
   let [saved, setSaved] = useState(false);
-  console.log('footer')
-  console.log(footer)
 
   const handleSubmit = (e) => {
     saveNewSubscription(email).then(() => {

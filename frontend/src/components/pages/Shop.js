@@ -1,19 +1,36 @@
 import React from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import ProductPreview from "../ProductPreview";
+
+const GET_PRODUCTS_URL = 'http://localhost:3000/api/v1/products';
+const SHIRT_PRODUCT_ID = 1;
 
 const Shop = () => {
-  let products = [1,2,3,4];
-  let counter = 0;
+  let [products, setProducts] = useState([]);
+  let [shirts, setShirts] = useState([]);
+  // let [product_type, setProduc] = useState(SHIRT_PRODUCT_ID);
+
+  useEffect(() => {
+    axios.get(GET_PRODUCTS_URL).then((response) => {
+      setProducts(response.data);
+      setShirts(getShirts()); 
+    }); 
+  }, []);
+
+  const getShirts = () => {
+    let shirts = products.filter(product => {
+      return product.product_type_id === SHIRT_PRODUCT_ID;
+    });
+
+    console.log(shirts);
+    return shirts;
+  };
 
   return (
     <div id='page-content' className='shop'>
-      {products.map(product => {
-        counter += 1;
-        return(
-            <div key={counter}>
-              <div className='font-larger'>Product {counter}</div>
-              <img src='/images/GinnyInMock.png' alt='mock up' />
-            </div>
-          );
+      {shirts.map(product => {
+        return(<ProductPreview key={product.id} product={product} />);
       })}
     </div>
   );

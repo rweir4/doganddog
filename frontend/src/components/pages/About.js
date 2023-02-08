@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../ContactForm";
+import Sizing from "../Sizing";
 
 const About = () => {
   return (
@@ -80,6 +81,7 @@ const About = () => {
           Machine wash on cold and hang dry to avoid shrinking. All fabrics have been pre-washed and should not shrink again unless subject to heat.
         </div>
       </div>
+      <Sizing />
       <ContactForm />
     </div>
   );

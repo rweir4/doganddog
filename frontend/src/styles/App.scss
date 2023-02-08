@@ -281,7 +281,7 @@ html, body {
 }
 
 .materials {
-  background-color: var(--light-lavender);
+  // background-color: var(--light-lavender);
   padding: 3rem 5rem;
 }
 
@@ -333,6 +333,14 @@ html, body {
   
     &:active {
     background-color: var(--lavender);
+  }
+}
+
+.sizing {
+  img {
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
   }
 }
 

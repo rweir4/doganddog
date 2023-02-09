@@ -23,7 +23,8 @@ const NewsletterSignUp = ( {footer} ) => {
     setEmail('');
   }
 
-  const pawFile = footer ? 'images/paw-light.png' : 'images/paw.png';
+  // const pawFile = footer ? 'images/paw-light.png' : 'images/paw.png';
+  const pawFile = 'images/paw-light.png';
 
   return (
     <form className='newsletter' onSubmit={e => handleSubmit(e)}>

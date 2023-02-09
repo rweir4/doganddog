@@ -16,7 +16,8 @@ const ProductListing = ({ shirts }) => (
 
 const BetaPage = () => (
   <div className='font-giant'>
-    Our Spring Release, English Garden, is coming March 1, 2023!
+    <div>Our Spring Release, English Garden, is coming Tuesday March 7, 2023!</div>
+    <img src='images/size-guide.png' alt='english-garden-promo' />
   </div>
 );
 

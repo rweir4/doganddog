@@ -12,13 +12,6 @@ html, body {
   font-family: 'Barlow Semi Condensed';
   font-weight: 300;
   text-decoration: none;
-
-  // display: grid;
-  // grid-template-columns: 1fr;
-      min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
 }
 
 /* navbar */
@@ -97,6 +90,7 @@ html, body {
 
   label {
     padding-bottom: 10px;
+    font-weight: 400;
   }
 
   input {
@@ -106,14 +100,14 @@ html, body {
     border: none;
     border-radius: 4px;
     line-height: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
 .submit-btn {
   transform: translate(0, 1px);
   font-family: 'Barlow Semi Condensed';
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5rem;
   background-color: var(--beige);
@@ -175,7 +169,7 @@ html, body {
   > div {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    height: 25rem;
+    height: 30rem;
   }
 
   img {
@@ -188,16 +182,18 @@ html, body {
 #page-content {
   position: relative;
   top: 13rem;
-  max-width: 60%;
+  max-width: 80%;
   margin: auto;
   align-items: center;
   text-align: center;
 }
 
 #home-subscribe {
+  color: var(--beige);
+  background-color: var(--green);
   height: 15rem;
-  background-color: var(--light-lavender);
-
+  display: flex;
+  justify-content: space-evenly;
 
   button:active {
     background-color: var(--dark-indigo);
@@ -211,9 +207,9 @@ html, body {
 }
 
 .subscribe-desc {
-  width: 20rem;
-  font-size: 1.2rem;
-  margin-left: 2rem;
+  width: 25rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 
@@ -239,17 +235,24 @@ html, body {
 /* ambassadors */
 
 .ambassadors {
-  width: 40rem;
-
-  a {
-    text-decoration: none;
-    color: black;
+  img {
+    width: 22rem;
+    margin: 10px;
   }
+}
+
+.rep-launch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // flex-wrap: wrap;
 }
 
 /* shipping and returns */
 
 .shipping-returns {
+  width: 60%;
+
   li {
     text-align: left;
     line-height: 2.5rem;
@@ -264,19 +267,24 @@ html, body {
 
 .about-page {
   font-size: 1.5rem;
-
+  
   div {
     font-size: 1.4rem;
   }
 }
 
 .about {
+  color: var(--beige);
   display: flex;
+  padding: 7rem;
+  // border-radius: 10px;
+  background-color: var(--green);
   
   > img {
     height: 40rem;
     width: 24rem;
     object-fit: cover;
+    padding-right: 2rem;
   }
 }
 

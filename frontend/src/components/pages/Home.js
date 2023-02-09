@@ -18,14 +18,11 @@ const Home = () => {
       </div>
       <div id='page-content' className='content'>
         <div>
-          <div className='font-giant'>Featured Looks</div>
+          <div className='font-giant space-before space-after'>Featured Looks</div>
             <div>
               <img src='/images/GinnyInMock.png' alt='mock up' />
               <div className='font-large'>Classic Linen Tunic</div>
             </div>
-        </div>
-        <div className='center font-larger ambassadors'>
-          <Ambassadors />
         </div>
         <div id='home-subscribe' className='flex-center-horizontal'>
           <NewsletterSignUp footer={false}/>
@@ -34,8 +31,11 @@ const Home = () => {
             signing up for our newsletter, which will be sent out once a month.
           </div>
         </div>
+        <div className='center font-larger ambassadors space-before space-after'>
+          <Ambassadors />
+        </div>
         <div>
-          <div>We're on Instagram!</div>
+          <div className='font-giant space-before space-after'>We're on Instagram!</div>
           <div>
             <AccountPreview userURL={social_accounts['Ginny&Co']['url']}/>
             <AccountPreview userURL={social_accounts['RebeccaAndGinny']['url']}/>

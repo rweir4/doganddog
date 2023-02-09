@@ -1,12 +1,12 @@
 :root {
-  --beige: #faf9f5;
+  --beige: #faf7f9;
   --beige-dark: #e3dfd1;
+  --beige: #fffffa;
   --light-lavender: #fef0fb;
   --lavender: #d5c1e6;
-  --indigo: #345185;
+  --indigo: #3a4861;
   --dark-indigo: #13223d;
-  --periwinkle: #cfe1ff;
-  --periwinkle-dark: #84a7e0;
+  --green: #9fbf99;
   margin: 0;
 
   --large-font: 1.3rem;

@@ -3,12 +3,15 @@ import { useState } from 'react';
 import axios from 'axios';
 
 const POST_MAILER_URL = 'http://localhost:3000/api/v1/mailers';
+const ERROR_MESSAGE = 'All fields are required. Email must be valid.'
 
 const sendMessage = (name, email, message) => {
   return axios.post(POST_MAILER_URL, {
     name: name,
     email: email,
     message: message
+  }).catch(() => {
+    return ERROR_MESSAGE;
   });
 }
 
@@ -17,20 +20,32 @@ const ContactForm = () => {
   let [email, setEmail] = useState('');
   let [message, setMessage] = useState('');
   let [emailSent, setEmailSent]  = useState(false);
+  let [error, setError] = useState( { error: false, message: '' })
 
   const handleSubmit = (e) => {
-    sendMessage(name, email, message).then(() => {
-      setEmailSent(true);
-      setName('');
-      setEmail('')
-      setMessage('');
+    sendMessage(name, email, message).then((response) => {
+      if (response == ERROR_MESSAGE) {
+        setError({
+          error: true,
+          message: ERROR_MESSAGE
+        });
+      } else {
+        setEmailSent(true);
+        setName('');
+        setEmail('')
+        setMessage('');
+        setError({
+          error: false,
+          message: ''
+        });
+      }
     });
     
     e.preventDefault();
   }
 
   return (
-    <form className='font-giant space-before contact-us'>Contact Us
+    <form className='font-title contact-us'>Contact Us
       <div>
         <label className='space-before'>Name</label>
         <input placeholder='Name' value={name} onChange={(e) => {setName(e.target.value)}}/>
@@ -52,6 +67,7 @@ const ContactForm = () => {
       {emailSent && <div className='complete'>
           <img src='images/paw.png' alt='paw-wave' />Your message was sent!<img src='images/paw.png' alt='paw-wave' />
         </div>}
+      {error['error'] && <div className='complete'>{error['message']}</div>}
     </form>
   );
 };

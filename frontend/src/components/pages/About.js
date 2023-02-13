@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div id='page-content' className='about-page'>
       <div>
-        <div className='font-giant space-before space-after'>About Ginny & Co.</div>
+        <div className='font-title space-before space-after'>About Ginny & Co.</div>
         <div className='about font-medium space-after'>
           <img src="images/about-ginnyandme.png" alt='Rebecca and Ginny'/>
           <div className='extra-spacing left-align-with-indent padding-left'>
@@ -37,12 +37,12 @@ const About = () => {
       </div>
       <br />
       <div className='materials'>
-        <div>About Our Materials</div>
-        <div className='flex space-before space-after'>
+        <div className='font-title'>About Our Materials</div>
+        <div className='flex-evenly space-before space-after'>
           <div>
-            <h2>
+            <div className='font-giant space-after space-before'>
               100% Irish Linen:
-            </h2>
+            </div>
             <div className='font-medium left-align-with-indent extra-spacing'>
               All of our products are made from Irish Linen, which is moisture-wicking, thermoregulating, 
               and antibacterial, to can keep your dog healthier, cleaner, and smelling better for longer. 
@@ -51,23 +51,24 @@ const About = () => {
           </div>
           <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
         </div>
-        <div className='flex space-after'>
-          <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
+        <div className='flex-evenly space-after'>
           <div>
-            <h2>
-              Kapok Fill:
-            </h2>
+            <div className='font-giant space-after space-before'>
+              100% Lambswool Fill:
+            </div>
             <div className='font-medium left-align-with-indent extra-spacing'>
-              Our plush toys are filled with kapok fibers, which are organic and hypoallergenic, 
-              gathered from the seed pods of the kapok tree.
+              Our plush toys are filled with lambswool fibers, which is sheered off of lambs instead of adult sheep,
+              and results in a softer fiber. It's also moisture-wicking, hypoallergenic, strong, and of course
+              biodegradable.
             </div>
           </div>
+          <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
         </div>
-        <div className='flex space-after'>
+        <div className='flex-evenly space-after'>
           <div>
-            <h2>
+            <div className='font-giant space-after space-before'>
               Rayon Embroidery Thread:
-            </h2>
+            </div>
             <div className='font-medium left-align-with-indent extra-spacing space-after'>
               A natural thread that comes from tree fibers, made strong by cellulose.
               We use this to give extra shine to our embroidery designs, which also 
@@ -76,7 +77,7 @@ const About = () => {
           </div>
           <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
         </div>
-        <div>Care</div>
+        <div className='font-giant space-after space-before'>Care</div>
         <div className='font-medium left-align-with-indent extra-spacing space-after'>
           Machine wash on cold and hang dry to avoid shrinking. All fabrics have been pre-washed and should not shrink again unless subject to heat.
         </div>

@@ -20,12 +20,12 @@ const ShippingAndReturns = () => {
   
   return (
     <div id='page-content' className='shipping-returns font-larger'>
-      <div className='font-giant space-after'>Shipping Policy</div>
+      <div className='font-title space-after'>Shipping Policy</div>
       {ShippingPolicy.map(policy => {
         shipping_count += 1;
         return (<li key={shipping_count}>{policy}</li>);
       })}
-      <div className='font-giant space-before space-after'>Return Policy</div>
+      <div className='font-title space-before space-after'>Return Policy</div>
       {ReturnPolicy.map(policy => {
         return_count += 1;
         return (<li key={return_count}>{policy}</li>);

@@ -266,11 +266,7 @@ html, body {
 /* about */
 
 .about-page {
-  font-size: 1.5rem;
-  
-  div {
-    font-size: 1.4rem;
-  }
+  font-size: 1.4rem;
 }
 
 .about {
@@ -289,8 +285,12 @@ html, body {
 }
 
 .materials {
-  // background-color: var(--light-lavender);
   padding: 3rem 5rem;
+
+  div {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .materials-img {
@@ -364,11 +364,6 @@ html, body {
 
 /* style based classes */
 
-.flex {
-  display: flex;
-  align-items: center;
-}
-
 .font-medium {
   font-size: larger;
 }
@@ -382,8 +377,11 @@ html, body {
 }
 
 .font-giant {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.0rem;
+}
+
+.font-title {
+  font-size: 2.5rem;
 }
 
 .left-align-with-indent {
@@ -405,6 +403,17 @@ html, body {
 
 .padding-left {
   padding-left: 30px;
+}
+
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .flex-center-horizontal {

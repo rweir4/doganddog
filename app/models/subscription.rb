@@ -3,7 +3,7 @@ class Subscription < ApplicationRecord
 
   def email_format_valid?
     if !email.present? || invalid_format?
-      errors.add(:email, 'Email must be valid')
+      errors.add(:email_error, 'Email must be valid')
     end
   end
 

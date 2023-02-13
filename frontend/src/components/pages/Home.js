@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       <div id='page-content' className='content'>
         <div>
-          <div className='font-giant space-before space-after'>Featured Looks</div>
+          <div className='font-title space-before space-after'>Featured Looks</div>
             <div>
               <img src='/images/GinnyInMock.png' alt='mock up' />
               <div className='font-large'>Classic Linen Tunic</div>
@@ -35,7 +35,7 @@ const Home = () => {
           <Ambassadors />
         </div>
         <div>
-          <div className='font-giant space-before space-after'>We're on Instagram!</div>
+          <div className='font-title space-before space-after'>We're on Instagram!</div>
           <div>
             <AccountPreview userURL={social_accounts['Ginny&Co']['url']}/>
             <AccountPreview userURL={social_accounts['RebeccaAndGinny']['url']}/>

@@ -46,7 +46,6 @@ class Api::V1::SubscriptionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def subscription_params
-      puts 'made it to the controller'
       params.require(:subscription).permit(:email)
     end
 end

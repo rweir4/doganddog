@@ -7,8 +7,8 @@ const About = () => {
     <div id='page-content' className='about-page'>
       <div>
         <div className='font-title space-before space-after'>About Ginny & Co.</div>
-        <div className='about font-medium space-after'>
-          <img src="images/about-ginnyandme.png" alt='Rebecca and Ginny'/>
+        <div className='about font-large space-after padding-bottom'>
+          <img src="images/ginny-and-me.png" alt='Rebecca and Ginny'/>
           <div className='extra-spacing left-align-with-indent padding-left'>
             <div>
               My name is Rebecca, and I live in East Tennessee with my long-haired miniature dachshund Ginny,
@@ -20,9 +20,7 @@ const About = () => {
             </div>
             <div className='space-before'>
               At Ginny & Co., we believe that natural fibers are best for dogs, just as they are for their humans.
-              Our spring line is made from Irish Linen fabrics that have a tight weave and smooth finish. We believe 
-              in dotting all our i's and crossing all our t's, so we ensure that the finish leaves no spare ends for your
-              dog to tear at to keep our products beautiful and safe.
+              Our spring line is made from Irish Linen, one of the highest quality linens available.
             </div>
             <div>
               From the english garden, to the pyramids, the beach, or simply the park, your pup should be ready 

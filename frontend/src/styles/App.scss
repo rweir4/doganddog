@@ -4,6 +4,11 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
+  
+  a {
+    color: inherit;
+    // text-decoration: underline;
+  }
 }
 
 #app {
@@ -100,7 +105,11 @@ html, body {
     border: none;
     border-radius: 4px;
     line-height: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -158,18 +167,16 @@ html, body {
   }
 }
 
-.content {
-  position: relative;
-  top: 9rem;
-  max-width: 60%;
-  margin: auto;
-  align-items: center;
-  text-align: center;
-  
+.home-content {
   > div {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    height: 30rem;
+
+    &:first-child {
+      margin-top: 5rem;
+    }
+
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    max-height: 30rem;
   }
 
   img {
@@ -189,6 +196,8 @@ html, body {
 }
 
 #home-subscribe {
+  border-radius: 0px;
+  padding: 2rem;
   color: var(--beige);
   background-color: var(--green);
   height: 15rem;
@@ -210,6 +219,11 @@ html, body {
   width: 25rem;
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.featured-looks {
+  width: 75%;
+  margin: auto;
 }
 
 
@@ -270,34 +284,42 @@ html, body {
 }
 
 .about {
-  color: var(--beige);
+  color: var(--dark-indigo);
   display: flex;
-  padding: 7rem;
-  // border-radius: 10px;
-  background-color: var(--green);
+  padding: 6rem;
+  background-color: var(--light-lavender);
+  border-radius: 2px;
   
   > img {
+    border: 5px;
+    border-color: white;
+    border-radius: 2px;
     height: 40rem;
-    width: 24rem;
+    width: 50%;
     object-fit: cover;
-    padding-right: 2rem;
   }
 }
 
 .materials {
-  padding: 3rem 5rem;
+  // padding: 3rem 5rem;
 
   div {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    // margin-left: 2rem;
+    // margin-right: 2rem;
+  }
+
+  img {
+    width: 23rem;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 }
 
-.materials-img {
-  width: 10rem;
-  height: 10rem;
-  margin: 20px;
-}
+// .materials-img {
+//   width: 10rem;
+//   height: 10rem;
+//   margin: 20px;
+// }
 
 .contact-us {
   margin-top: 5rem;
@@ -365,15 +387,15 @@ html, body {
 /* style based classes */
 
 .font-medium {
-  font-size: larger;
-}
-
-.font-large {
   font-size: 1.2rem;
 }
 
-.font-larger {
+.font-large {
   font-size: 1.5rem;
+}
+
+.font-larger {
+  font-size: 1.7rem;
 }
 
 .font-giant {
@@ -402,7 +424,11 @@ html, body {
 }
 
 .padding-left {
-  padding-left: 30px;
+  padding-left: 5rem;
+}
+
+.padding-bottom {
+  padding-bottom: 5rem;
 }
 
 
@@ -424,7 +450,6 @@ html, body {
 }
 
 .flex-center-vertical {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -434,4 +459,8 @@ html, body {
 
 .center {
   margin: auto;
+}
+
+.shift-img-down {
+  object-position: top;
 }

@@ -16,7 +16,14 @@ const ProductListing = ({ shirts }) => (
 
 const BetaPage = () => (
   <div className='font-title'>
-    <div>Our Spring Release, English Garden, is coming Tuesday March 7, 2023!</div>
+    <div className='space-after'>
+      Our Spring Release, English Garden, is coming Tuesday March 7, 2023!
+    </div>
+    <div className='font-giant'>Products will be available on Etsy, and featured here.</div>
+    <div className='font-giant space-after'>
+      Keep an eye out on the <a href='https://www.etsy.com/shop/GinnyAndCoStore' target='blank'>Ginny & Co. Shop</a>!
+    </div>
+    <img src='images/ginny-indigo-shirt.png' alt='ginny-indigo-shirt' />
     <img src='images/size-guide.png' alt='english-garden-promo' />
   </div>
 );

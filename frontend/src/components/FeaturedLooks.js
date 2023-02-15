@@ -10,14 +10,16 @@ const FeaturedLooks = () => {
           className='contain-img'
           src='/images/ginny-indigo-shirt.png' 
           alt='ginny-indigo-shirt' />
-        <div className='font-large'>Classic Linen Tunic</div>
+        <div className='font-large space-before'>Classic Linen Tunic</div>
+        <div className='font-medium'>Indigo</div>
       </div>
       <div>
         <img 
           className='shift-img-down'
           src='/images/ginny-lavender-bandana.png'
           alt='ginny-lavender-bandana' />
-        <div className='font-large'>Classic Lavender Bandana</div>
+        <div className='font-large space-before'>Vine Bandana</div>
+        <div className='font-medium'>Lavender</div>
       </div>
     </div>
   );

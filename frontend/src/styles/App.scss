@@ -114,7 +114,7 @@ html, body {
 }
 
 .submit-btn {
-  transform: translate(0, 1px);
+  transform: translate(0, 2px);
   font-family: 'Barlow Semi Condensed';
   font-weight: 400;
   font-size: 1.2rem;
@@ -266,6 +266,10 @@ html, body {
 
 .shipping-returns {
   width: 60%;
+  background-color: var(--green);
+  padding: 5rem;
+  border-radius: 2px;
+  color: var(--beige);
 
   li {
     text-align: left;
@@ -301,25 +305,28 @@ html, body {
 }
 
 .materials {
-  // padding: 3rem 5rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  margin-bottom: 9rem;
+  margin-top: 9rem;
+  background-color: var(--green);
+  color: var(--beige);
 
   div {
-    // margin-left: 2rem;
-    // margin-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   img {
-    width: 23rem;
+    width: 20rem;
     padding-left: 3px;
     padding-right: 3px;
   }
 }
 
-// .materials-img {
-//   width: 10rem;
-//   height: 10rem;
-//   margin: 20px;
-// }
+.care {
+  padding: 0 10rem;
+}
 
 .contact-us {
   margin-top: 5rem;
@@ -431,6 +438,9 @@ html, body {
   padding-bottom: 5rem;
 }
 
+.margin-before {
+  margin-top: 30px;
+}
 
 .flex {
   display: flex;

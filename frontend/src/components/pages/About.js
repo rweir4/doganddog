@@ -35,15 +35,15 @@ const About = () => {
       </div>
       <br />
       <div className='materials'>
-        <div className='font-title'>About Our Materials</div>
+        <div className='font-title space-after'>About Our Materials</div>
         <div className='flex-evenly space-before space-after'>
           <div>
             <div className='font-giant space-after space-before'>
               100% Irish Linen:
             </div>
-            <div className='font-medium left-align-with-indent extra-spacing'>
+            <div className='font-large left-align-with-indent extra-spacing'>
               All of our products are made from Irish Linen, which is moisture-wicking, thermoregulating, 
-              and antibacterial, to can keep your dog healthier, cleaner, and smelling better for longer. 
+              and antibacterial, so you can keep your dog healthier, cleaner, and smelling better for longer. 
               It also lets go of stains and gets more durable when wet, making it perfect for summer fun!
             </div>
           </div>
@@ -54,9 +54,9 @@ const About = () => {
             <div className='font-giant space-after space-before'>
               100% Lambswool Fill:
             </div>
-            <div className='font-medium left-align-with-indent extra-spacing'>
+            <div className='font-large left-align-with-indent extra-spacing'>
               Our plush toys are filled with lambswool fibers, which is sheered off of lambs instead of adult sheep,
-              and results in a softer fiber. It's also moisture-wicking, hypoallergenic, strong, and of course
+              and results in a softer fiber. It's also absorbant and moisture-wicking, hypoallergenic, strong, and of course
               biodegradable.
             </div>
           </div>
@@ -65,19 +65,23 @@ const About = () => {
         <div className='flex-evenly space-after'>
           <div>
             <div className='font-giant space-after space-before'>
-              Rayon Embroidery Thread:
+              Embroidery Thread:
             </div>
-            <div className='font-medium left-align-with-indent extra-spacing space-after'>
-              A natural thread that comes from tree fibers, made strong by cellulose.
+            <div className='font-large left-align-with-indent extra-spacing space-after'>
+              We use Rayon, a natural thread, made strong by the cellulose in tree fibers.
               We use this to give extra shine to our embroidery designs, which also 
               require a stronger thread than cotton or silk.
+              We also use a poly stabilizer as the backing for the embroidery.
+              We're in search of a natural alterative, but haven't found one yet!
             </div>
           </div>
           <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
         </div>
         <div className='font-giant space-after space-before'>Care</div>
-        <div className='font-medium left-align-with-indent extra-spacing space-after'>
-          Machine wash on cold and hang dry to avoid shrinking. All fabrics have been pre-washed and should not shrink again unless subject to heat.
+        <div className='font-large left-align-with-indent extra-spacing care'>
+          Machine wash on cold and hang dry to avoid shrinking. 
+          All fabrics have been pre-washed and should not shrink again unless subject to heat to dry.
+          Iron at medium to medium-high settings depending on how hot your iron gets.
         </div>
       </div>
       <Sizing />

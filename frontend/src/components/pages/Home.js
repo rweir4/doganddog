@@ -25,7 +25,7 @@ const Home = () => {
         </div>
         <div>
           <div className='font-title space-after'>Newsletter</div>
-          <div id='home-subscribe' className='flex-center-horizontal'>
+          <div id='home-subscribe' className='flex-center-horizontal margin-before'>
             <NewsletterSignUp footer={false}/>
             <div className='subscribe-desc extra-spacing'>
               Be in the know before collections are released by 

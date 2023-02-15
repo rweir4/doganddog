@@ -14,6 +14,7 @@ function App() {
   return (
     <div id='app'>
       <BrowserRouter>
+        <ScrollToTop />
         <Header/>
         <main>
           <Routes>

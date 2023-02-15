@@ -10,38 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_01_174732) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_15_183151) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "colors", force: :cascade do |t|
     t.string "color", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "inventories", force: :cascade do |t|
-    t.integer "product_id", null: false
-    t.integer "color_id", null: false
-    t.integer "size_id", null: false
-    t.integer "quantity", null: false
+  create_table "product_categories", force: :cascade do |t|
+    t.string "category", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "product_types", force: :cascade do |t|
+  create_table "product_subcategories", force: :cascade do |t|
+    t.string "subcategory", null: false
+    t.integer "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "category"
   end
 
   create_table "products", force: :cascade do |t|
     t.string "name", null: false
     t.text "description", null: false
     t.float "price", null: false
-    t.integer "product_type_id", null: false
+    t.string "file"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "color_id"
-    t.text "sizes", default: "--- []\n"
-    t.string "product_photo_location"
+    t.integer "product_subcategory_id", null: false
+    t.text "color_ids", default: ["0"], array: true
     t.index ["name"], name: "index_products_on_name"
   end
 
@@ -49,7 +49,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_01_174732) do
     t.string "size", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "product_types", default: "--- []\n"
+    t.text "product_subcategory_ids", default: [], array: true
   end
 
   create_table "subscriptions", force: :cascade do |t|

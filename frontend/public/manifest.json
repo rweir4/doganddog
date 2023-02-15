@@ -3,7 +3,7 @@
   "name": "Ginny & Co.",
   "icons": [
     {
-      "src": "logo_and_name.png",
+      "src": "logo-light-background.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

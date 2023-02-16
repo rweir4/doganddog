@@ -2,8 +2,8 @@ import React from "react";
 
 const ShippingPolicy = [
   'We ship with USPS, and follow Etsy guidelines.',
-  'Domestic shipping is included in the price, and should take around one week.',
-  'International shipping will be an extra _____ amount, and will take two weeks.',
+  'Domestic shipping is included in the price, but International will be extra, depending on your region.',
+  'We aim to get your order to you in 5-10 days.'
 ]
 
 const ReturnPolicy = [
@@ -31,8 +31,7 @@ const ShippingAndReturns = () => {
         return (<li key={return_count}>{policy}</li>);
       })}
       <div className='space-before'>
-        **Exceptions:
-        We cannot be responsible for lost or stolen packages for orders less than $25.
+        **Shipping Insurance is automatically applied to orders over $25.
       </div>
     </div>
   );

@@ -39,7 +39,7 @@ const About = () => {
         <div className='flex-evenly space-before space-after'>
           <div>
             <div className='font-giant space-after space-before'>
-              100% Irish Linen:
+              100% Irish Linen
             </div>
             <div className='font-large left-align-with-indent extra-spacing'>
               All of our products are made from Irish Linen, which is moisture-wicking, thermoregulating, 
@@ -47,12 +47,12 @@ const About = () => {
               It also lets go of stains and gets more durable when wet, making it perfect for summer fun!
             </div>
           </div>
-          <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
+          {/* <img className='materials-img' src='images/linen-colors.png' alt='irish linen' /> */}
         </div>
         <div className='flex-evenly space-after'>
           <div>
             <div className='font-giant space-after space-before'>
-              100% Lambswool Fill:
+              100% Lambswool Fill
             </div>
             <div className='font-large left-align-with-indent extra-spacing'>
               Our plush toys are filled with lambswool fibers, which is sheered off of lambs instead of adult sheep,
@@ -60,12 +60,12 @@ const About = () => {
               biodegradable.
             </div>
           </div>
-          <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
+          {/* <img className='materials-img' src='images/linen-colors.png' alt='irish linen' /> */}
         </div>
         <div className='flex-evenly space-after'>
           <div>
             <div className='font-giant space-after space-before'>
-              Embroidery Thread:
+              Embroidery
             </div>
             <div className='font-large left-align-with-indent extra-spacing space-after'>
               We use Rayon, a natural thread, made strong by the cellulose in tree fibers.
@@ -75,7 +75,7 @@ const About = () => {
               We're in search of a natural alterative, but haven't found one yet!
             </div>
           </div>
-          <img className='materials-img' src='images/linen-colors.png' alt='irish linen' />
+          {/* <img className='materials-img' src='images/linen-colors.png' alt='irish linen' /> */}
         </div>
         <div className='font-giant space-after space-before'>Care</div>
         <div className='font-large left-align-with-indent extra-spacing care'>

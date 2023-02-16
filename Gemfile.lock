@@ -205,6 +205,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-s3 (~> 1.119)
   bootsnap
+  bundler (~> 2.3, >= 2.3.25)
   debug
   jbuilder (~> 2.7)
   pg

@@ -15,10 +15,11 @@ default: &default
 development:
   <<: *default
   database: postgres
-  username: ENV['AWS-DEV-USERNAME']
-  password: ENV['AWS-DEV-PASSWORD']
-  host: ENV['AWS-DEV-HOST']
-  port: ENV['AWS-DEV-PORT']
+  database: <%= ENV['RDS_DEV_DB_NAME'] %>
+  username: <%= ENV['RDS_DEV_USERNAME'] %>
+  password: <%= ENV['RDS_DEV_PASSWORD'] %>
+  host: <%= ENV['RDS_DEV_HOSTNAME'] %>
+  port: <%= ENV['RDS_DEV_PORT'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -31,11 +32,11 @@ development:
 #   <<: *default
 #   database: db/production.sqlite3
 
-# production:
-#   adapter: postgres
-#   encoding: utf8
-#   database: <%= ENV['RDS_DB_NAME'] %>
-#   username: <%= ENV['RDS_USERNAME'] %>
-#   password: <%= ENV['RDS_PASSWORD'] %>
-#   host: <%= ENV['RDS_HOSTNAME'] %>
-#   port: <%= ENV['RDS_PORT'] %>
+production:
+  adapter: postgres
+  encoding: utf8
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>

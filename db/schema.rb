@@ -10,10 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_15_183151) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
+ActiveRecord::Schema[7.0].define(version: 2023_06_27_184948) do
   create_table "colors", force: :cascade do |t|
     t.string "color", null: false
     t.datetime "created_at", null: false
@@ -22,6 +19,20 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_15_183151) do
 
   create_table "product_categories", force: :cascade do |t|
     t.string "category", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "product_colors", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "color_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "product_sizes", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "size_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,10 +49,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_15_183151) do
     t.text "description", null: false
     t.float "price", null: false
     t.string "file"
+    t.integer "product_subcategory_id", null: false
+    t.integer "product_type_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "product_subcategory_id", null: false
-    t.text "color_ids", default: ["0"], array: true
     t.index ["name"], name: "index_products_on_name"
   end
 
@@ -49,7 +60,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_15_183151) do
     t.string "size", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "product_subcategory_ids", default: [], array: true
   end
 
   create_table "subscriptions", force: :cascade do |t|

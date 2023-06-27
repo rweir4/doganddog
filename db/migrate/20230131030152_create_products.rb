@@ -5,7 +5,6 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.text :description, null: false
       t.float :price, null: false
       t.string :file
-      t.integer :color_ids, default: [0], array: true
       t.integer :product_subcategory_id, null: false
       t.integer :product_type_id, null: false
       t.timestamps

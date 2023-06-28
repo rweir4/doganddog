@@ -6,7 +6,6 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.float :price, null: false
       t.string :file
       t.integer :product_subcategory_id, null: false
-      t.integer :product_type_id, null: false
       t.timestamps
     end
   end

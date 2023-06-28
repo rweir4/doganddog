@@ -9,7 +9,7 @@ gem 'bundler', '~> 2.3', '>= 2.3.25'
 gem "rails", "~> 7.0.4", ">= 7.0.4.1"
 
 # Use sqlite3 as the database for Active Record
-# gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.4"
 
 gem 'pg'
 

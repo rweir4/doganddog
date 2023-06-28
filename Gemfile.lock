@@ -89,17 +89,12 @@ GEM
     crass (1.0.6)
     date (3.3.3)
     debug (1.7.1)
-      irb (>= 1.5.0)
-      reline (>= 0.3.1)
     diff-lcs (1.5.0)
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    io-console (0.6.0)
-    irb (1.6.2)
-      reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -172,8 +167,6 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    reline (0.3.2)
-      io-console (~> 0.5)
     rspec-core (3.12.1)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.2)
@@ -191,6 +184,7 @@ GEM
       rspec-mocks (~> 3.11)
       rspec-support (~> 3.11)
     rspec-support (3.12.0)
+    sqlite3 (1.6.3-arm64-darwin)
     thor (1.2.1)
     timeout (0.3.1)
     tzinfo (2.0.5)
@@ -216,6 +210,7 @@ DEPENDENCIES
   rails (~> 7.0.4, >= 7.0.4.1)
   rails_12factor
   rspec-rails
+  sqlite3 (~> 1.4)
   tzinfo-data
 
 RUBY VERSION

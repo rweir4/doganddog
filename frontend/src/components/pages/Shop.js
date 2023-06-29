@@ -54,6 +54,7 @@ const Shop = () => {
   return (
     <div id='page-content' className='shop'>
       {isReleased ? <ProductListing shirts={[]}/> : <BetaPage />}
+      {/* <ProductListing shirts={[]} /> */}
     </div>
   );
 };

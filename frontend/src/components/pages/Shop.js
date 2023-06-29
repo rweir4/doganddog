@@ -23,15 +23,15 @@ const BetaPage = () => (
     <div className='font-giant space-after'>
       Keep an eye out on the <a href='https://www.etsy.com/shop/GinnyAndCoStore' target='blank'>Ginny & Co. Shop</a>!
     </div>
-    <img src='images/ginny-indigo-shirt.png' alt='ginny-indigo-shirt' />
-    <img src='images/size-guide.png' alt='english-garden-promo' />
+    {/* <img src='images/ginny-indigo-shirt.png' alt='ginny-indigo-shirt' />
+    <img src='images/size-guide.png' alt='english-garden-promo' /> */}
   </div>
 );
 
 const Shop = () => {
   let [products, setProducts] = useState([]);
   let [shirts, setShirts] = useState([]);
-  // let [product_type, setProduc] = useState(SHIRT_PRODUCT_ID)
+  // let [product_type, setProduct] = useState(SHIRT_PRODUCT_ID)
 
   useEffect(() => {
     axios.get(GET_PRODUCTS_URL).then((response) => {
@@ -42,7 +42,7 @@ const Shop = () => {
 
   const getShirts = () => {
     let shirts = products.filter(product => {
-      return product.product_type_id === SHIRT_PRODUCT_ID;
+      return product.product_subcategory_id === SHIRT_PRODUCT_ID;
     });
 
     console.log(shirts);
